@@ -148,8 +148,10 @@ Screenshots
 -----------
 
 ### GET Request
+![Get All Hotels](screenshots/Get%20All%20Hotels.png)
 
 ### POST Request
+![Add New Hotel](screenshots/Add%20New%20Hotel.png)
 
 
 
