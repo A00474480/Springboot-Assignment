@@ -103,6 +103,11 @@ Retrieve a list of all hotels in the database.
     ]
     ```
 
+- **Curl Command:**
+  ```sh
+  curl --location 'http://localhost:8080/hotels'
+    
+
 ### Add New Hotel
 
 Add a new hotel to the database.
@@ -143,6 +148,20 @@ Add a new hotel to the database.
   * **Code:** 400 BAD REQUEST
   * **Content:** `{ "status": "400 BAD REQUEST", "error": "Bad Request", "timestamp": "2024-03-10T08:00:00" }`
 
+- **Curl Command:**
+  ```sh
+  curl --location 'http://localhost:8080/hotels' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+    "name": "Tropical Paradise Hotel",
+    "location": "Caribbean Island",
+    "price": 350.00,
+    "rating": 4.8,
+    "total_rooms_available": 80,
+    "contact_email": "info@tropicalparadisehotel.com",
+    "contact_phone": "555-127-4969",
+    "website": "http://www.tropicalparadisehotel.com"
+  }'
 
 Screenshots
 -----------
